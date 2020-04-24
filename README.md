@@ -32,6 +32,19 @@ Some more installation instructions for Pandoc and Reveal.js can be found on:
 - [Pandoc Manual](https://pandoc.org/MANUAL.html)
 - [Pandoc Wiki: reveal.js](https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides)
 
+## Limitations
+
+Some current limitations are listed here.
+
+### Extended Tables
+
+Pandoc currently (04/2020) does not support Extended Tables (multi-columns and multi-rows), such as in MultiMarkdown format. Some issues:
+
+- [https://github.com/jgm/pandoc/issues/1024](https://github.com/jgm/pandoc/issues/1024)
+- [https://stackoverflow.com/questions/30528217/table-layouts-for-use-with-pandoc](https://stackoverflow.com/questions/30528217/table-layouts-for-use-with-pandoc)
+
+The current solution seems to do the table in HTML or LaTeX. To do both simultaneously, you can use our filter [comments-to.py](libs/comments-to.py) (implemented via [pandocfilters](https://github.com/jgm/pandocfilters) on python).
+
 -------
 
 MIT License - 2020

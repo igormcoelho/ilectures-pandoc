@@ -10,6 +10,7 @@ This is a tutorial exploring nice possibilities for Pandoc over interactive lect
 This is still under construction. See avaiable topics:
 
 - [0 - Setup](tutorial/0-setup/0-setup.md)
+- [1 - Basics](tutorial/1-basics/1-basics.md)
 
 ...
 
@@ -30,7 +31,7 @@ Currently, we consider the following packages:
 Some more installation instructions for Pandoc and Reveal.js can be found on:
 
 - [Pandoc Manual](https://pandoc.org/MANUAL.html)
-- [Pandoc Wiki: reveal.js](https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides)
+- [Pandoc Wiki: integration with reveal.js](https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides)
 
 ## Limitations
 
@@ -42,8 +43,26 @@ Pandoc currently (04/2020) does not support Extended Tables (multi-columns and m
 
 - [https://github.com/jgm/pandoc/issues/1024](https://github.com/jgm/pandoc/issues/1024)
 - [https://stackoverflow.com/questions/30528217/table-layouts-for-use-with-pandoc](https://stackoverflow.com/questions/30528217/table-layouts-for-use-with-pandoc)
+- [https://stackoverflow.com/questions/39329602/multimarkdown-tables-with-pandoc](https://stackoverflow.com/questions/39329602/multimarkdown-tables-with-pandoc)
 
 The current solution seems to do the table in HTML or LaTeX. To do both simultaneously, you can use our filter [comments-to.py](libs/comments-to.py) (implemented via [pandocfilters](https://github.com/jgm/pandocfilters) on python).
+
+### Incremental items on Reveal.js
+
+When using double-columns together with incremental lists, these may be buggy on reveal.js (not displaying after button press). In these cases, avoid `-i` incremental option.
+
+If necessary to do incremental items, it's better to use `fenced_div` surrounding it:
+
+```
+::: {.incremental}
+
+- item1
+- item2
+
+:::
+```
+
+Beware that incremental lists seems to be broken for `beamer` (you can use `comments-to.py` filter switches).
 
 -------
 

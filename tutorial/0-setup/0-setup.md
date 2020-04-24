@@ -23,8 +23,6 @@ Also, the ability to just write everything in `markdown` gets more and more attr
 
 First of all, install Pandoc: `https://pandoc.org/`.
 
-If you have time, read its MANUAL (a litle big as it covers all possible conversion formats): `https://pandoc.org/MANUAL`.
-
 We focus on two formats: `beamer` and `revealjs`.
 
 --------
@@ -112,3 +110,10 @@ This is how Reveal.js looks like (over `http://localhost:8081`):
 This is how [Beamer PDF](./beamer-0-setup.pdf) looks like:
 
 ![Beamer preview](./img/beamer-preview.png "Beamer preview"){width=80%}
+
+
+------
+
+## Have Fun
+
+If you have time, read its MANUAL (a litle big, since it covers all possible conversion formats): `https://pandoc.org/MANUAL`.

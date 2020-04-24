@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Igor M. Coelho">
+  <meta name="dcterms.date" content="2020-04-23">
+  <title>Demonstration Beamer/Reveal</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="reveal.js/css/reset.css">
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="general.css">
+  <link rel="stylesheet" type="text/css" href="reveal-beamer.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Demonstration Beamer/Reveal</h1>
+  <p class="author">Igor M. Coelho</p>
+  <p class="date">April 23, 2020</p>
+</section>
+
+<section>
+<section id="part-0-setup" class="title-slide slide level1">
+<h1>Part 0: setup</h1>
+
+</section>
+<section id="get-pandoc" class="slide level2 allowframebreaks">
+<h2 class="allowframebreaks">Get Pandoc</h2>
+<p>This tutorial intends to provide interactive slides for lectures of 21st century.</p>
+<p>We believe <code>Pandoc</code> is an amazing technology for it! Honestly, I love <span class="math inline">\(\text{\LaTeX}\)</span> and <code>beamer</code>, but this limits outputs to PDF. Also, the ability to just write everything in <code>markdown</code> gets more and more attractive. Pandoc is able to automatically generate <code>beamer</code> code, and also to build nice interactive slides, such as <code>reveal.js</code>.</p>
+<p>First of all, install Pandoc: <code>https://pandoc.org/</code>.</p>
+<p>If you have time, read its MANUAL (a litle big as it covers all possible conversion formats): <code>https://pandoc.org/MANUAL</code>.</p>
+<p>We focus on two formats: <code>beamer</code> and <code>revealjs</code>.</p>
+</section>
+<section id="editor-installation" class="slide level2 allowframebreaks">
+<h2 class="allowframebreaks">Editor Installation</h2>
+<p>One can use Atom, VSCode, Typora or any other markdown editors.</p>
+<p>We use <code>Atom</code> with plugin <code>markdown-preview-enhanced</code> (but same plugin exists for <code>VSCode</code>). The reason is that it supports more flavors of markdown, which approximates to pandoc dialect (although not perfect!).</p>
+</section>
+<section id="atom-configuration" class="slide level2 allowframebreaks">
+<h2 class="allowframebreaks">Atom Configuration</h2>
+<p>If using <code>Atom</code>, do the following plugin configurations <code>Ctrl + ,</code>:</p>
+<ul>
+<li class="fragment"><code>Math Rendering Option</code>-&gt; <code>MathJax</code></li>
+<li class="fragment"><code>Pandoc Options Path</code> -&gt; <code>/usr/bin/pandoc</code></li>
+<li class="fragment"><code>Pandoc Commandline Arguments</code> -&gt; <code>--standalone, --filter=pandoc-katex, --css=katex.min.css</code></li>
+</ul>
+<p>This should allow <span class="math inline">\(\text{\LaTeX}\)</span> equations as <span class="math inline">\(\sum_{i=0}^{n}\sqrt{i}\)</span>, which is a must!</p>
+</section>
+<section id="testing-basic-configuration" class="slide level2 allowframebreaks">
+<h2 class="allowframebreaks">Testing Basic Configuration</h2>
+<p>Please enter this directory (we are assuming <code>linux</code> now). We always assume two outputs will be generated: <code>beamer</code> (PDF) and <code>reveal.js</code> (JS).</p>
+<p>The reason is that we still want to have a “stable” standalone (printable) version, while generating another equivalent interactive version.</p>
+<p>You will need to setup a local browser, “thanks” to browser CORS (<strong>absolutely no way around them!</strong>): <code>python3 -m http.server 8081</code></p>
+<p>After that, you can type <code>make</code>.</p>
+</section>
+<section id="standalone-preference" class="slide level2 allowframebreaks">
+<h2 class="allowframebreaks">Standalone Preference</h2>
+<p>Note that we are interested in “standalone” and “self-contained” versions, at all costs (pandoc flags <code>--standalone</code> and <code>--self-contained</code>). Internet may not be as widely available (during teaching, for example). There may be however some limitations, for specific scenarios, where Internet will always be required.</p>
+<p>We require downloading KaTeX css, its fonts, and also <code>reveal.js</code>.</p>
+</section>
+<section id="beamer-and-reveal-compatibility" class="slide level2 allowframebreaks">
+<h2 class="allowframebreaks">Beamer and Reveal Compatibility</h2>
+<p>To improve compatibility between beamer and reveal, we provide <code>beamer-reveal.css</code> file.</p>
+<p>This setups fonts to be similar in both platforms, but this will certainly change when templates and other stuff change. Feel free to adjust it to your needs (adjust it to have a beautiful model!).</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Transition style
+        transition: 'cube', // none/fade/slide/convex/concave/zoom
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: 'reveal.js/plugin/math/math.js', async: true },
+          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>

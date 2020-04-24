@@ -27,6 +27,8 @@ If you have time, read its MANUAL (a litle big as it covers all possible convers
 
 We focus on two formats: `beamer` and `revealjs`.
 
+--------
+
 ## Editor Installation {.allowframebreaks}
 
 One can use Atom, VSCode, Typora or any other markdown editors.
@@ -60,6 +62,8 @@ You will need to setup a local browser, "thanks" to browser CORS (**absolutely n
 
 After that, you can type `make`.
 
+------
+
 ## Standalone Preference {.allowframebreaks}
 
 Note that we are interested in "standalone" and "self-contained" versions, at all costs (pandoc flags `--standalone` and `--self-contained`).
@@ -68,8 +72,43 @@ There may be however some limitations, for specific scenarios, where Internet wi
 
 We require downloading KaTeX css, its fonts, and also `reveal.js`.
 
+------
+
 ## Beamer and Reveal Compatibility {.allowframebreaks}
 
 To improve compatibility between beamer and reveal, we provide `beamer-reveal.css` file.
 
 This setups fonts to be similar in both platforms, but this will certainly change when templates and other stuff change. Feel free to adjust it to your needs (adjust it to have a beautiful model!).
+
+------
+
+## Some Prints: Atom {.allowframebreaks}
+
+This is how Atom editor looks like:
+
+![Atom preview](./img/atom-preview.png "Atom preview"){width=80%}
+
+------
+
+## Some Prints: VSCode {.allowframebreaks}
+
+This is how VSCode editor looks like:
+
+![VSCode preview](./img/vscode-preview.png "VSCode preview"){width=80%}
+
+------
+
+## Some Prints: Reveal.js {.allowframebreaks}
+
+This is how Reveal.js looks like (over `http://localhost:8081`):
+
+![Reveal.js preview](./img/revealjs-preview.png "Reveal.js preview"){width=80%}
+
+
+------
+
+## Some Prints: Beamer {.allowframebreaks}
+
+This is how [Beamer PDF](./beamer-0-setup.pdf) looks like:
+
+![Beamer preview](./img/beamer-preview.png "Beamer preview"){width=80%}

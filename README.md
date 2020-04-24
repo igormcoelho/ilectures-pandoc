@@ -9,15 +9,15 @@ This is a tutorial exploring nice possibilities for Pandoc over interactive lect
 
 This is still under construction. See avaiable topics:
 
-- [0 - Setup](tutorial/0-setup/0-setup.md) (pandoc markdown) - [PDF](tutorial/0-setup/beamer-0-setup.pdf)
-- [1 - Basics](tutorial/1-basics/1-basics.md) (pandoc markdown) - [PDF](tutorial/1-basics/beamer-1-basics.pdf)
+- [0 - Setup](tutorials/0-setup/0-setup.md) (pandoc markdown) - [PDF](tutorials/0-setup/beamer-0-setup.pdf)
+- [1 - Basics](tutorials/1-basics/1-basics.md) (pandoc markdown) - [PDF](tutorials/1-basics/beamer-1-basics.pdf)
 
 ...
 
 
 ## Installation instructions
 
-We provide some installation instructions on tutorials, specially on: [0 - Setup](tutorial/0-setup/0-setup.md).
+We provide some installation instructions on tutorials, specially on: [0 - Setup](tutorials/0-setup/0-setup.md).
 
 Currently, we consider the following packages:
 

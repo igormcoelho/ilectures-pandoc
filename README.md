@@ -1,17 +1,19 @@
 ---
 author: Igor M. Coelho
+date: April 8, 2020
 title: ilectures-pandoc
 ---
 
 # Interactive Lectures on Pandoc
 
-This is a tutorial exploring nice possibilities for Pandoc over interactive lectures.
+This is a tutorial exploring nice possibilities of using Pandoc for interactive lectures.
 
 This is still under construction. See avaiable topics:
 
 - [0 - Setup](tutorials/0-setup/0-setup.md) (pandoc markdown) - [PDF](tutorials/0-setup/beamer-0-setup.pdf)
 - [1 - Basics](tutorials/1-basics/1-basics.md) (pandoc markdown) - [PDF](tutorials/1-basics/beamer-1-basics.pdf)
-- [2 - plots](tutorials/2-plots/2-plots.md) (pandoc markdown) - [PDF](tutorials/2-plots/beamer-2-plots.pdf)
+- [2 - Plots](tutorials/2-plots/2-plots.md) (pandoc markdown) - [PDF](tutorials/2-plots/beamer-2-plots.pdf)
+- [3 - Media](tutorials/3-media/3-media.md) (pandoc markdown) - [PDF](tutorials/3-media/beamer-3-media.pdf)
 
 ...
 

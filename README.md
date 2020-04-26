@@ -17,6 +17,7 @@ This is still under construction. See avaiable topics:
 
 ...
 
+- [6 - Fun](tutorials/6-fun/6-fun.md) (pandoc markdown) - [PDF](tutorials/6-fun/beamer-6-fun.pdf)
 
 ## Installation instructions
 

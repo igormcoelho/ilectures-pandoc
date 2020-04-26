@@ -1,0 +1,35 @@
+% nothing here
+
+\usepackage{xcolor}
+
+%\usepackage[3D]{movie15}
+\usepackage{hyperref}
+\usepackage[UKenglish]{babel}
+
+\usepackage{media9}[2015/11/02]
+
+\newcommand{\columnsbegin}{\begin{columns}}
+\newcommand{\columnsend}{\end{columns}}
+
+\newcommand{\col}[1]{\column{#1\textwidth}}
+
+%\usepackage[nameinlink]{cleveref} % nameInLink used on pandoc-crossref too (see cref option too)
+
+
+\DeclareSymbolFont{extraup}{U}{zavm}{m}{n}
+\DeclareMathSymbol{\varheart}{\mathalpha}{extraup}{86}
+\DeclareMathSymbol{\vardiamond}{\mathalpha}{extraup}{87}
+
+\usepackage{xcolor}
+\definecolor{heart}{RGB}{226,85,85}
+\definecolor{maroon}{RGB}{176,48,96} % #B03060
+\definecolor{crimson}{RGB}{220,20,60} % #DC143C
+
+\usepackage{fontspec,microtype,shapepar,xcolor}
+\setmainfont{TeX Gyre Chorus}
+
+%% https://tex.stackexchange.com/questions/139733/can-we-make-a-love-heart-with-latex
+%% https://wordcloud2-js.timdream.org/#
+
+\usepackage{newunicodechar} % To write the definition on the next line
+\newunicodechar{❤}{\ensuremath{\varheart}}

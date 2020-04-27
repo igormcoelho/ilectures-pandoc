@@ -16,7 +16,7 @@ This is still under construction. See avaiable topics:
 - [3 - Media](tutorials/3-media/3-media.md) (pandoc markdown) - [PDF](tutorials/3-media/beamer-3-media.pdf)
 
 ...
-
+- [5 - Quiz](tutorials/5-quiz/5-quiz.md) (pandoc markdown) - [PDF](tutorials/5-quiz/beamer-5-quiz.pdf)
 - [6 - Fun](tutorials/6-fun/6-fun.md) (pandoc markdown) - [PDF](tutorials/6-fun/beamer-6-fun.pdf)
 
 ## Installation instructions

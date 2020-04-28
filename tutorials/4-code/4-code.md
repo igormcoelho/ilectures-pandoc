@@ -8,7 +8,7 @@ header-includes:
 - <link rel="stylesheet" type="text/css" href="general.css">
 - <link rel="stylesheet" type="text/css" href="reveal-beamer.css">
 - <link rel="stylesheet" type="text/css" href="cslider.css">
-- <link rel="stylesheet" type="text/css" media="screen" href="ace.css">
+- <link rel="stylesheet" type="text/css" href="ace.css">
 - <script src="./ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
 ---
 
@@ -159,7 +159,10 @@ editor.session.setMode("ace/mode/javascript");
 
 <!-- BEGIN COMMENT TO beamer -->
 
-<div id="ace-editor1" style="height: 200px; background-color:#191919;"></div>
+<div id="ace-editor1" style="height: 200px; background-color:#191919;">
+var x = 1;
+alert(x);
+</div>
 
 <script>
 var editor = ace.edit("ace-editor1");

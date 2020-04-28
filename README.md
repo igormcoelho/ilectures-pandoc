@@ -8,7 +8,7 @@ title: ilectures-pandoc
 
 This is a tutorial exploring nice possibilities of using Pandoc for interactive lectures.
 
-This is still under construction. See avaiable topics:
+See avaiable topics:
 
 - [0 - Setup](tutorials/0-setup/0-setup.md) (pandoc markdown) - [PDF](tutorials/0-setup/beamer-0-setup.pdf)
 - [1 - Basics](tutorials/1-basics/1-basics.md) (pandoc markdown) - [PDF](tutorials/1-basics/beamer-1-basics.pdf)

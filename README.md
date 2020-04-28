@@ -14,8 +14,7 @@ This is still under construction. See avaiable topics:
 - [1 - Basics](tutorials/1-basics/1-basics.md) (pandoc markdown) - [PDF](tutorials/1-basics/beamer-1-basics.pdf)
 - [2 - Plots](tutorials/2-plots/2-plots.md) (pandoc markdown) - [PDF](tutorials/2-plots/beamer-2-plots.pdf)
 - [3 - Media](tutorials/3-media/3-media.md) (pandoc markdown) - [PDF](tutorials/3-media/beamer-3-media.pdf)
-
-...
+- [4 - Code](tutorials/4-code/4-code.md) (pandoc markdown) - [PDF](tutorials/4-code/beamer-4-code.pdf)
 - [5 - Quiz](tutorials/5-quiz/5-quiz.md) (pandoc markdown) - [PDF](tutorials/5-quiz/beamer-5-quiz.pdf)
 - [6 - Fun](tutorials/6-fun/6-fun.md) (pandoc markdown) - [PDF](tutorials/6-fun/beamer-6-fun.pdf)
 

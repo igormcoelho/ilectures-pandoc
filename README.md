@@ -25,16 +25,35 @@ We provide some installation instructions on tutorials, specially on: [0 - Setup
 Currently, we consider the following packages:
 
 - `pandoc 2.9.2`: [Pandoc Website](https://pandoc.org)
+- LaTeX
+  * pdflatex: sudo apt-get install texlive-latex-base
+  * beamer: sudo apt install texlive-latex-recommended
 - `Atom 1.45.0`: [Atom.io Website](https://atom.io)
 - Atom plugin `markdown-preview-enhanced 0.17.8`: [MPE Website](https://shd101wyy.github.io/markdown-preview-enhanced)
 - Extras:
   * Anaconda3 `conda 4.8.3` for plots (including `plotly`): [Conda3 Download](https://www.anaconda.com/distribution/)
-
+  * cargo install pandoc-katex (install cargo/rust: https://www.rust-lang.org/tools/install)
+     - https://github.com/xu-cheng/pandoc-katex
+  * python3 -m pip install pandoc-latex-color
+     - https://pypi.org/project/pandoc-latex-color/
+  * pandoc-crossref  (install cabal/haskell: sudo apt-get install haskell-platform)
+     - we need cabal 3.0.0 at least
+     - cabal update && cabal install Cabal cabal-install
+     - ~/.cabal/bin/cabal v2-update
+     - ~/.cabal/bin/cabal v2-install --install-method=copy pandoc pandoc-crossref pandoc-citeproc
+     - https://github.com/lierdakil/pandoc-crossref.git
 
 Some more installation instructions for Pandoc and Reveal.js can be found on:
 
 - [Pandoc Manual](https://pandoc.org/MANUAL.html)
 - [Pandoc Wiki: integration with reveal.js](https://github.com/jgm/pandoc/wiki/Using-pandoc-to-produce-reveal.js-slides)
+
+## VSCode plugins
+
+We strongly recommend the plugins:
+
+- markdown-preview-enhanced: amazing pandoc-markdown preview
+- paste-image (`mushan.vscode-paste-image`): just type `Ctrl+Alt+P "paste image"` to add clipboard image to markdown automatically.
 
 ## Limitations
 

@@ -34,8 +34,7 @@ To add HTML5 embeddings, such as audios, one can do with `<audio>` tag. This is 
 
 <audio controls="1">
   <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
-          data-external="1" type="audio/mpeg">
-  </source>
+          data-external="1" type="audio/mpeg" />
 </audio>
 
 <!-- END COMMENT TO beamer -->
@@ -46,8 +45,7 @@ To add HTML5 embeddings, such as audios, one can do with `<audio>` tag. This is 
 <audio controls="1">
   <source src="https://www.soundhelix.com/examples/mp3/
 	                            SoundHelix-Song-1.mp3"
-          data-external="1" type="audio/mpeg">
-  </source>
+          data-external="1" type="audio/mpeg" />
 </audio>
 ```
 
@@ -129,16 +127,22 @@ This will only appear on Atom.
 import {createRenderCanvas} from 'http://localhost:8081/my3dobject.js';
 window.createcanvas = createRenderCanvas;
 </script>
+<script type="module">
+import {createRenderCanvas} from 'https://igormcoelho.github.io/ilectures-pandoc/tutorials/3-media/my3dobject.js';
+window.createcanvas = createRenderCanvas;
+</script>
+<link rel="stylesheet" type="text/css" href="cslider.css">
 
 ```javascript {cmd=true}
 window.createcanvas("mycanvas1", "enable_canvas_c1", "http://localhost:8081/windmill.obj");
+window.createcanvas("mycanvas1", "enable_canvas_c1", "https://igormcoelho.github.io/ilectures-pandoc/tutorials/3-media/windmill.obj");
 ```
 
 <!-- END COMMENT -->
 
 ![Preview on Atom](./img/code-chunk-js-threejs.png)
 
-To see this example on Atom, execute `make run` or any local server to `http://localhost:8081`, due to CORS.
+To see this example on Atom, execute `make run` or any local server to `http://localhost:8081`, due to CORS (or optionally, a [hardcoded web link]("https://igormcoelho.github.io/ilectures-pandoc/tutorials/3-media")).
 
 
 -------

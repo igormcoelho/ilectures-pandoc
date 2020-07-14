@@ -55,6 +55,18 @@ We strongly recommend the plugins:
 - markdown-preview-enhanced: amazing pandoc-markdown preview
 - paste-image (`mushan.vscode-paste-image`): just type `Ctrl+Alt+P "paste image"` to add clipboard image to markdown automatically.
 
+------
+
+## Demonstrations
+
+- Lecture for Operations Research (in Portuguese) of Prof. Igor Machado Coelho (2020): https://igormcoelho.github.io/curso-pesquisa-operacional-i
+
+![](2020-07-14-15-53-37.png)
+
+Example of course number 3 (simplex), visualized on VSCode plugin.
+
+-------
+
 ## Limitations
 
 Some current limitations are listed here.

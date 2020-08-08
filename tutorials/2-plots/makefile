@@ -11,8 +11,10 @@ all: deps
 	    -t beamer --metadata to="beamer" \
 	    --filter pandoc-latex-color  --filter ../../libs/pandoc-plot  \
 			 --filter ../../libs/comments-to.py \
-			-F pandoc-crossref -H header.tex \
+			 -H header.tex \
 			2-plots.md -o beamer-2-plots.pdf --slide-level 2
+
+#			-F pandoc-crossref -H header.tex \
 
 run:
 	python3 -m http.server 8081

@@ -2,7 +2,7 @@
 author: Igor M. Coelho
 title: Demonstration Beamer/Reveal
 date: April 23, 2020
-transition: cube
+transition: linear
 fontsize: 10
 header-includes:
 - <link rel="stylesheet" type="text/css" href="general.css">
@@ -48,12 +48,14 @@ Remember to do `conda activate`, otherwise you may still get errors like: `Modul
 This amazing plugin allows several graphs (only `plotly` with interactive counterpart!):
 
 - `plotly_python` : plots using the plotly Python library
+- `plotly_r` : plots using the plotly R library
 - `matplotlib`: plots using the matplotlib Python library
 - `matlabplot`: plots using MATLAB
 - `mathplot` : plots using Mathematica
 - `octaveplot`: plots using GNU Octave
 - `ggplot2`: plots using ggplot2
 - `gnuplot`: plots using gnuplot
+- and more...
 
 You can get this information via `pandoc-plot --toolkits`.
 

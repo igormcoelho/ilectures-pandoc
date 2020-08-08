@@ -42,6 +42,9 @@ Currently, we consider the following packages:
      - ~/.cabal/bin/cabal v2-update
      - ~/.cabal/bin/cabal v2-install --install-method=copy pandoc pandoc-crossref pandoc-citeproc
      - https://github.com/lierdakil/pandoc-crossref.git
+  * pandoc-source-exec (pip install pandoc-source-exec)
+     - https://github.com/shoeffner/pandoc-source-exec
+     - https://github.com/shoeffner/pandoc-source-exec/issues/11
 
 Some more installation instructions for Pandoc and Reveal.js can be found on:
 

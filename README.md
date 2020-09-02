@@ -84,22 +84,20 @@ Pandoc currently (04/2020) does not support Extended Tables (multi-columns and m
 
 The current solution seems to do the table in HTML or LaTeX. To do both simultaneously, you can use our filter [comments-to.py](libs/comments-to.py) (implemented via [pandocfilters](https://github.com/jgm/pandocfilters) on python).
 
-### Incremental items on Reveal.js
+### Incremental items on Reveal.js/Beamer
 
 When using double-columns together with incremental lists, these may be buggy on reveal.js (not displaying after button press). In these cases, avoid `-i` incremental option.
 
 If necessary to do incremental items, it's better to use `fenced_div` surrounding it:
 
 ```
-::: {.incremental}
+::: incremental
 
 - item1
 - item2
 
 :::
 ```
-
-Beware that incremental lists seems to be broken for `beamer` (you can use `comments-to.py` filter switches).
 
 -------
 

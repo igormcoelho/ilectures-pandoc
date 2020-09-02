@@ -99,6 +99,14 @@ If necessary to do incremental items, it's better to use `fenced_div` surroundin
 :::
 ```
 
+And an alternative (older option do not require `fenced_div`):
+
+```
+> - item1
+> - item2
+```
+
+
 -------
 
 MIT License - 2020

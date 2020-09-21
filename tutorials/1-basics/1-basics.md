@@ -45,8 +45,8 @@ Headers can become different things (e.g,`--slide-level 2` on Pandoc):
 | Slide   | Header 1 (`#`) | Header 2 (`##`) | Header 3 (`###`) |
 | :------ | :------------  | :--------------: | ---------------: |
 | Level 1 |     Frame      |           Box                     ||
-| Level 2 |  Section <br> Section  |           Frame |              Box |
-| Level 3 |    Section     |      Subsection |            Frame |
+| Level 2 |    Section     |           Frame |              Box |
+| Level 3 |    ^           |      Subsection |            Frame |
 
 You just need to use standard markdown table notation:
 
@@ -57,7 +57,7 @@ You just need to use standard markdown table notation:
 | :---    |    :----       |         :---:   |          ---:    |
 | Level 1 | Frame          | Box                               ||
 | Level 2 | Section        | Frame           | Box              |
-| Level 3 | Section        | Subsection      | Frame            |
+| Level 3 | ^              | Subsection      | Frame            |
 ```
 
 -------
@@ -82,9 +82,6 @@ Example:
 
 Let's divide in three parts (35%, 30%, 35%):
 
-<!-- <div class="columns">
-<div class="column" width="35%" style="max-width:35%;"> -->
-
 ::::::::::::: {.columns}
 
 ::::: {.column width=35%}
@@ -93,10 +90,6 @@ Let's divide in three parts (35%, 30%, 35%):
   - Some item
 
 :::::
-
-<!--
-</div>
-<div class="column" width="30%" style="max-width:30%;">  -->
 
 ::::: {.column width=30%}
 
@@ -189,7 +182,6 @@ Double column with image on side (20% and 80%):
 </div>
 <div class="column" width="50%" style="max-width:50%;">
 
-<style> img[alt="An universe picture"] { width: 70%; } </style>
 ![An universe picture](./universe.jpg "An example image"){width=70%}
 
 </div>

@@ -8,8 +8,10 @@ all: deps
 	1-basics.md -o index.html --slide-level 2 # --toc
 	#
 	#
+	# --filter pandoc-latex-color \ 
+	# -F pandoc-crossref \ 
 	/usr/bin/pandoc --toc -s --self-contained -V theme:Warsaw -t beamer \
-	    --filter pandoc-latex-color -F pandoc-crossref -H header.tex \
+		-H header.tex \
 			1-basics.md -o beamer-1-basics.pdf --slide-level 2
 
 run:

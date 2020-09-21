@@ -4,7 +4,7 @@ function quiz_ds(question_id)
   var qlist =  [
       {
         id : 'q1',
-        solutions : [2] // counts from zero! 0,1,2,3...
+        solutions : [0] // counts from zero! 0,1,2,3...
       },
       {
         id : 'q2',

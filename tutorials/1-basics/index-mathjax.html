@@ -9,8 +9,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="reveal.js/css/reset.css">
-  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -81,18 +81,7 @@
     code span.vs { color: #4070a0; } /* VerbatimString */
     code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="reveal.js/css/theme/beige.css" id="theme">
-  <!-- Printing and PDF exports -->
-  <script>
-    var link = document.createElement( 'link' );
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
-    document.getElementsByTagName( 'head' )[0].appendChild( link );
-  </script>
-  <!--[if lt IE 9]>
-  <script src="reveal.js/lib/js/html5shiv.js"></script>
-  <![endif]-->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/beige.css" id="theme">
   <link rel="stylesheet" type="text/css" href="general.css">
   <link rel="stylesheet" type="text/css" href="reveal-beamer.css">
 </head>
@@ -153,13 +142,13 @@
 </tr>
 <tr class="even">
 <td style="text-align: left;">Level 2</td>
-<td style="text-align: left;">Section <br> Section</td>
+<td style="text-align: left;">Section</td>
 <td style="text-align: center;">Frame</td>
 <td style="text-align: right;">Box</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Level 3</td>
-<td style="text-align: left;">Section</td>
+<td style="text-align: left;">^</td>
 <td style="text-align: center;">Subsection</td>
 <td style="text-align: right;">Frame</td>
 </tr>
@@ -170,22 +159,20 @@
 | :---    |    :----       |         :---:   |          ---:    |
 | Level 1 | Frame          | Box                               ||
 | Level 2 | Section        | Frame           | Box              |
-| Level 3 | Section        | Subsection      | Frame            |</code></pre>
+| Level 3 | ^              | Subsection      | Frame            |</code></pre>
 </section>
 <section id="sec-images1" class="slide level2">
 <h2>Images</h2>
 <p>We saw <a href="#/basic-formatting">basic formatting</a>. To insert figures, use Markdown notation: <code>![AltText](./filename.jpg "Title")</code></p>
 <p>To resize it and visualize on Atom, Beamer and Reveal, just use Pandoc <code>bracketed_spans</code> notation: <code>{width=80%}</code>.</p>
 <figure>
-<img data-src="./universe.jpg" title="An example image" style="width:30.0%" alt="" /><figcaption>An universe picture</figcaption>
+<img data-src="./universe.jpg" title="An example image" style="width:30.0%" alt="An universe picture" /><figcaption aria-hidden="true">An universe picture</figcaption>
 </figure>
 <p>Example: <code>![An universe picture](./universe.jpg "An example image"){width=40%}</code></p>
 </section>
 <section id="organization-and-columns-part-i" class="slide level2">
 <h2>Organization and Columns (Part I)</h2>
 <p>Let’s divide in three parts (35%, 30%, 35%):</p>
-<!-- <div class="columns">
-<div class="column" width="35%" style="max-width:35%;"> -->
 <div class="columns">
 <div class="column" style="width:35%;">
 <ul>
@@ -194,9 +181,7 @@
 <li class="fragment">Some item</li>
 </ul></li>
 </ul>
-</div><!--
-</div>
-<div class="column" width="30%" style="max-width:30%;">  --><div class="column" style="width:30%;">
+</div><div class="column" style="width:30%;">
 <p><strong>Just an equation:</strong> <span class="math display">\[\sum_{i=0}^{n}\sqrt{i}\]</span> <!--
 </div>
 <div class="column" width="35%" style="max-width:35%;"> --></p>
@@ -213,11 +198,11 @@
 </div>
 </div>
 <p><em>To create multiple columns in a compatible way, we can use:</em> </p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;columns&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb2-2"><a href="#cb2-2"></a>  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;column&quot;</span><span class="ot"> width=</span><span class="st">&quot;35%&quot;</span><span class="ot"> style=</span><span class="st">&quot;max-width:35%;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb2-3"><a href="#cb2-3"></a>     Content for column with 35% size</span>
-<span id="cb2-4"><a href="#cb2-4"></a>  <span class="kw">&lt;/div&gt;</span></span>
-<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;columns&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a>  <span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;column&quot;</span><span class="ot"> width=</span><span class="st">&quot;35%&quot;</span><span class="ot"> style=</span><span class="st">&quot;max-width:35%;&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a>     Content for column with 35% size</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a>  <span class="kw">&lt;/div&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
 </section>
 <section id="fenceddivs" class="slide level2 allowframebreaks">
 <h2 class="allowframebreaks">Fenced Divs</h2>
@@ -260,9 +245,8 @@
 </ul></li>
 </ul>
 </div><div class="column" style="max-width:50%;" style="width:50%;">
-<style> img[alt="An universe picture"] { width: 70%; } </style>
 <figure>
-<img data-src="./universe.jpg" title="An example image" style="width:70.0%" alt="" /><figcaption>An universe picture</figcaption>
+<img data-src="./universe.jpg" title="An example image" style="width:70.0%" alt="An universe picture" /><figcaption aria-hidden="true">An universe picture</figcaption>
 </figure>
 </div>
 </div>
@@ -313,12 +297,18 @@
     </div>
   </div>
 
-  <script src="reveal.js/js/reveal.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  // reveal.js plugins
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/math/math.js"></script>
 
   <script>
 
       // Full list of configuration options available at:
-      // https://github.com/hakimel/reveal.js#configuration
+      // https://revealjs.com/config/
       Reveal.initialize({
         // Push each slide change to the browser history
         history: true,
@@ -341,12 +331,12 @@
           },
         },
 
-        // Optional reveal.js plugins
-        dependencies: [
-          { src: 'reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-          { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
-          { src: 'reveal.js/plugin/math/math.js', async: true },
-          { src: 'reveal.js/plugin/notes/notes.js', async: true }
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
         ]
       });
     </script>
